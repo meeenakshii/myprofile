@@ -128,3 +128,14 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ALLOWED_HOSTS = ['myprofile-8btp.onrender.com', 'localhost', '127.0.0.1']
 
+# settings.py
+import os
+# STATIC_URL is the URL that will be used to access static files
+STATIC_URL = '/static/'
+
+# Add this to serve static files on production
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# For handling media files (optional if you need to upload user-generated files)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
