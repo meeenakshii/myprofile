@@ -139,3 +139,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # For handling media files (optional if you need to upload user-generated files)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'myprofile/static'),
+]
